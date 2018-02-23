@@ -12,5 +12,9 @@
     "cashmixer.org":{
        "port": 8080,
        "ssl" : true
+    },
+    "cosca4.informatik.uni-ulm.de":{
+       "port": 8080,
+       "ssl" : true
     }
 }
