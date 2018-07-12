@@ -108,7 +108,10 @@ class InputAdressWidget(QComboBox):
             return None
 
     def get_input_address_as_string(self, fmt=Address.FMT_LEGACY):
-        return self.inputsArray[self.currentIndex()]['address'].to_string(fmt)
+        if len(self.inputsArray) > 0:
+            return self.inputsArray[self.currentIndex()]['address'].to_string(fmt)
+        else:
+            return None
 
     def get_input_value(self):
         i = self.currentIndex()
